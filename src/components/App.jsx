@@ -1,16 +1,21 @@
-export const App = () => {
-  return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
-};
+import React, { Component } from "react";
+import Loader from "./Loader/Loader";
+
+class App extends Component {
+  state = {
+    gallery: [],
+    filter: '',
+    showLoader: false
+  };
+
+
+
+  render() {
+    return (
+      <>
+        <Loader />
+      </>)
+  }
+}
+  
+export default App;
